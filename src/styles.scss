@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@use "@angular/material" as mat;
-$my-custom-level: mat.define-typography-level(
-  $font-family: JetBrains Mono,
-);
+// @use "@angular/material" as mat;
+// $my-custom-level: mat.define-typography-level(
+//   $font-family: JetBrains Mono,
+//   $font-size: 1.5rem,
+// );
+// @include mat.core($my-custom-level);
 @font-face {
   font-family: "JetBrains Mono";
   src: local("JetBrains Mono"),
