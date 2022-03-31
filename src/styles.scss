@@ -1,4 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@use "@angular/material" as mat;
+$my-custom-level: mat.define-typography-level(
+  $font-family: JetBrains Mono,
+);
+@font-face {
+  font-family: "JetBrains Mono";
+  src: local("JetBrains Mono"),
+    url(./assets/Fonts/JetBrainsMono-VariableFont_wght.ttf) format("truetype");
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  font-family: "JetBrains Mono", monospace;
+}
